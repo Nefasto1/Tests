@@ -12,7 +12,7 @@ def search(city, file):
     for line in file:
         value = line.split(",");
         if value[0][1:-1] != "LatD":
-            if value[8].upper()[2:-1] == city.upper():
+            if value[8].upper()[2:-1] == city:
                 info = value;
                 found = True;
     
